@@ -76,8 +76,8 @@ li {
   border-radius: 50%;
   cursor: pointer;
   margin: 0 0.125%;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   transition: border 1s;
 }
 
@@ -190,7 +190,10 @@ li {
   .slider-images {
     height: auto;
   }
-
+  .carousel__nav > label > span {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
   .slider-item {
     align-items: flex-end;
   }
