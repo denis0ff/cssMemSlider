@@ -21,7 +21,7 @@ li {
   padding: 40px;
   row-gap: 2em;
   display: grid;
-  grid-template-columns: 85% 15%;
+  grid-template-columns: 79vw 14vw;
   justify-content: center;
 }
 
@@ -70,7 +70,7 @@ li {
 
 .carousel__nav > label > span {
   box-sizing: border-box;
-  border: 2px solid #badddf;
+  border: 1rem solid #badddf;
   background: #badddf;
   display: inline-block;
   border-radius: 50%;
@@ -125,9 +125,8 @@ li {
   > label:nth-child(4)
   > span {
   background: transparent;
-  border: 2px solid #badddf;
+  border: 0.2rem solid #badddf;
   cursor: default;
-  pointer-events: none;
   transition: border 1s;
 }
 
@@ -151,7 +150,7 @@ li {
 }
 
 .carousel__nav > label:hover > span {
-  border: 5px solid #fefefe;
+  border: 0.5rem solid #fefefe;
   background: transparent;
   transition: border 1s;
 }
@@ -170,7 +169,10 @@ li {
 @media screen and (max-width: 1140px) {
   .wrapper {
     max-width: 100%;
+    grid-template-columns: 68vw 25vw;
+    padding: 0;
   }
+
 }
 @media screen and (max-width: 768px) {
   .slider-item-text {
@@ -182,8 +184,6 @@ li {
   .wrapper {
     height: 100%;
     row-gap: 0;
-    padding: 0;
-    grid-template-columns: 65vw 30vw;
     grid-template-rows: 75% 8% 17%;
   }
 
@@ -191,6 +191,7 @@ li {
     height: auto;
   }
   .carousel__nav > label > span {
+    border-width: 0.75rem;
     width: 1.5rem;
     height: 1.5rem;
   }
